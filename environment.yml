@@ -1,0 +1,45 @@
+name: emissions
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # === базовые библиотеки ===
+  - python=3.10
+  - pandas
+  - numpy
+  - scipy
+
+  # === визуализация ===
+  - matplotlib
+  - seaborn
+  - plotly
+
+  # === машинное обучение ===
+  - scikit-learn
+  - xgboost
+  - lightgbm
+
+  # === статистика и анализ ===
+  - statsmodels
+  - pingouin      # продвинутые корреляции, partial corr, ANOVA
+
+  # === интерпретация и объяснение ML ===
+  - shap
+  - eli5
+
+  # === jupyter environment ===
+  - jupyter
+  - jupyterlab
+  - ipywidgets
+
+  # === дополнительные утилиты ===
+  - openpyxl      # чтение Excel, если нужно
+  - xlrd
+  - tqdm
+  - joblib
+  - pip
+
+  - pip:
+      - optuna           # для подбора гиперпараметров
+      - catboost         # если захочешь градиентные модели от Яндекса
+      - matplotlib-inline
